@@ -146,5 +146,5 @@ DJRICHTEXTFIELD_CONFIG = {
 
 django_heroku.settings(locals())
 
-if not ENV:
+if os.path.isfile(dotenv_file):
     del DATABASES['default']['OPTIONS']['sslmode']
