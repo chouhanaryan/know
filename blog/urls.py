@@ -6,4 +6,5 @@ urlpatterns = [
     path("author/<author>/", views.author, name="author"),
     path("<int:pk>/", views.detail, name="detail"),
     path("tag/<tag>/", views.tag, name="tag"),
+    path("<str:random>/", views.customerror, name='error-page'),
 ]

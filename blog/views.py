@@ -36,3 +36,6 @@ def author(request, author):
         "posts": posts
     }
     return render(request, "author.html", context)
+
+def customerror(request, random):
+    return render(request, 'customerror.html', context={'random': random})

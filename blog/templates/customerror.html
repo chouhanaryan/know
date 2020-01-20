@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}<title>KNOW: Error</title>{% endblock %}
+
+{% block content %}
+	<br>
+	<h1>Error: '/{{ random }}/'</h1>
+    <br>
+	
+	<div>
+		<p1>
+			Page does not exist.<br>
+			You will be redirected to the Home page in 5 seconds.
+		</p1>
+	</div>
+
+	<script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "/catalog/";
+        }, 5000);
+    </script>
+{% endblock %}
