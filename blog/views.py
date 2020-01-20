@@ -38,4 +38,4 @@ def author(request, author):
     return render(request, "author.html", context)
 
 def customerror(request, random):
-    return render(request, 'customerror.html', context={'random': random})
+    return render(request, "customerror.html", context={'random': random})
