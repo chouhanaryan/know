@@ -13,9 +13,7 @@
             {{ post.created_on.date }} | Author: <a href="{% url 'author' post.author %}">{{ post.author }}</a> |
             Tags:
             {% for tag in post.tags.all %}
-            <a href="{% url 'tag' tag.name %}">
-                {{ tag.name }}
-            </a>
+            <a href="{% url 'tag' tag.name %}">{{ tag.name }}</a>
             {% endfor %}
         </small>
         <!-- <p>{{ post.body | slice:":400" }}...</p> -->
